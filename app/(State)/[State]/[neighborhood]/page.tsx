@@ -143,7 +143,7 @@ export async function generateMetadata({ params }: NeighborhoodPageProps) {
     title,
     description,
     alternates: {
-      canonical: `https://${State}.${ContactInfo.host}/neighborhoods/${neighborhood}/`,
+      canonical: `https://${State}.${ContactInfo.host}/${neighborhood}/`,
     },
   };
 }
@@ -273,7 +273,7 @@ export default async function NeighborhoodPage({
           .join(ContentData?.name || ContactInfo.location)
           ?.split("[phone]")
           .join(ContactInfo.No)}`,
-        url: `https://${State}.${ContactInfo.host}/neighborhoods/${neighborhood}`,
+        url: `https://${State}.${ContactInfo.host}/${neighborhood}`,
         aggregateRating: {
           "@type": "AggregateRating",
           reviewCount: 7,
